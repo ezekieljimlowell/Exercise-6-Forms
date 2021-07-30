@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import ControlledInput from './ControlledInput';
+import FormById from './FormById';
+import FormByIndex from './FormByIndex';
+import FormByRef from './FormByRef';
+import PreventUpperCase from './PreventUpperCase';
 
 function App() {
+  const idOfElement = (inputName) => {
+    alert(inputName);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ControlledInput />
+      <FormById idOfElement={idOfElement}/>
+      <FormByIndex idOfElement={idOfElement}/>
+      <FormByRef idOfElement={idOfElement}/>
+      <PreventUpperCase />
     </div>
   );
 }
