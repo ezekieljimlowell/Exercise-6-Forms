@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ControlledInput = () => {
     const [textInput, setTextInput] = useState("");
-
+    
     let changeHandler = (e) => {
         e.preventDefault();
         let value = e.target.value;

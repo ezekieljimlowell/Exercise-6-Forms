@@ -9,7 +9,7 @@ function App() {
   const idOfElement = (inputName) => {
     alert(inputName);
   }
-
+  
   return (
     <div>
       <ControlledInput />
