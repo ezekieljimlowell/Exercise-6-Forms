@@ -1,11 +1,13 @@
 
 const FormById = ({idOfElement}) => {
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         idOfElement(e.target.elements.username.value)
         console.log(e.target.elements[0].value);
         console.log(e.target.elements);
     }
+
     return (
         <form onSubmit={handleSubmit}>
             <label for="username"> changeHandler by ID: </label>

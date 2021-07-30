@@ -1,5 +1,6 @@
 
 const FormByIndex = ({idOfElement}) => {
+    
     const submitHandler = (e) => {
         e.preventDefault();
         idOfElement(e.target.elements[0].value);

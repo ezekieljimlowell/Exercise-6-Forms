@@ -1,6 +1,7 @@
 import { useRef } from "react";
 
 const FormByRef = ({idOfElement}) => {
+    
     const inputRef = useRef(null);
 
     const submit = (e) => {

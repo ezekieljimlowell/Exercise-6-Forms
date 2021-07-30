@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const PreventUpperCase = () => {
+    
     let [inputLower, setInputLower] = useState("");
     let [error, setError] = useState("");
 
